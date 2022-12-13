@@ -1,0 +1,268 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Poppins:wght@600;700&family=Roboto:ital,wght@0,700;1,700&family=Rubik+Glitch&family=Rubik+Microbe&display=swap'); 
+body {
+  background-color: var(--body-bg-color);
+  margin: 2%;
+}
+h1,
+h2,
+h3,
+a,
+p { font-family: "Merriweather Sans", sans-serif ;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.CaixaPai {
+  display: grid;
+  box-sizing: border-box;
+  margin: 10px;
+  grid-template-columns: 18% 35% 33%;
+  grid-template-rows: 2% 12% 10% 13% 15% 18% 15%;
+  grid-template-areas:
+    "Profile   meusprojetos  meusprojetos"
+    "Profile   postghub1   postghub2"
+    "contato   postrecente   postrecente"
+    "contato    post     post"
+    "tecnologia . ."
+    "experiencias . ."
+    "educação  . . ";
+
+  column-gap: 5%;
+  row-gap: 5%; 
+}
+.Profile {
+  position: absolute;
+  grid-area: Profile;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 20vw;
+  height: 40vh;
+  min-width: 195px;
+  min-height: 209px;
+  left: 40px;
+  top:40px;
+  box-sizing: border-box;
+
+  top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+
+  border-radius: 10px;
+}
+.fotoperfil {
+  width: 100px;
+  height: 100px;
+  border: solid 2px greenyellow;
+  border-radius: 50%;
+}
+.Profile p {
+  margin: 0px;
+}
+
+.Profile h2 {
+  margin-bottom: 0px;
+}
+.MeusProjetos {
+  grid-area: meusprojetos;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 72.5vw;
+  height: 10vh;
+  right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 20px;
+  
+}
+.Contact {
+  grid-area: contato;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 20vw;
+  height: 60vh;
+  box-sizing: border-box;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+#localizacao{
+  
+width: 20px;
+height: 30px;
+left: 20px;
+top:100px;
+}
+
+#trabalho{
+  width: 20px;
+height: 30px;
+left: 20px;
+top:100px;
+}
+
+#github{
+  width: 20px;
+height: 30px;
+left: 20px;
+top:100px;
+}
+
+#linkedin{
+  width: 20px;
+height: 30px;
+left: 20px;
+top:100px;
+}
+
+#twitter{
+  width: 20px;
+height: 30px;
+left: 20px;
+top:100px;
+}
+
+#instagram{
+  width: 20px;
+height: 30px;
+left: 20px;
+top:100px;
+}
+
+#mail{
+  width: 20px;
+height: 30px;
+left: 20px;
+top:100px;
+}
+.PostGhub1 {
+  grid-area: postghub1;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 35vw;
+  height: 21vh;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  border-radius: 10px;
+
+}
+.PostGhub2 {
+  grid-area: postghub2;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 35vw;
+  height: 21vh;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+
+.PostRecente {
+  grid-area: postrecente;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 71.5vw;
+  height: 10vh;
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.gifjava{
+  margin-left: 250px;
+}
+.Post {
+  grid-area: post;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 71.5vw;
+  height: 29vh;
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.fotopostagem{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.Post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.tecnologia {
+  grid-area: tecnologia;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 20vw;
+  height: 30vh;
+  padding-left: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+ul{
+  list-style-type:none;
+  padding: 0px;
+}
+.tecnologiaslist{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.tecnologia1{
+font-size: 10px;
+font-weight: 700;
+line-height: 13px;
+background-color: var(--bg-techs);
+border-radius: 10px;
+width: 85px;
+height: 20px;
+margin: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Experiencias {
+  grid-area: experiencias;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width:20vw;
+  left: 10;
+  padding-left: 20px;
+  height: 35vh;
+  bottom: 10px;
+  border-radius: 10px;
+}
+.Educação {
+  grid-area: educação;
+  border: solid 2px var(--bg-cards);
+  background-color: var(--bg-cards);
+  width: 20vw;
+  height: 35vh;
+  padding-left: 20px;
+  border-radius: 10px;
+}
