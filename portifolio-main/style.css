@@ -75,10 +75,11 @@ p { font-family: "Merriweather Sans", sans-serif ;
   grid-area: meusprojetos;
   border: solid 2px var(--bg-cards);
   background-color: var(--bg-cards);
-  width: 72.5vw;
+  width: 71vw;
   height: 10vh;
   right: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -140,7 +141,7 @@ top:100px;
 }
 
 #mail{
-  width: 20px;
+width: 20px;
 height: 30px;
 left: 20px;
 top:100px;
@@ -150,7 +151,7 @@ top:100px;
   border: solid 2px var(--bg-cards);
   background-color: var(--bg-cards);
   width: 35vw;
-  height: 21vh;
+  height: 25vh;
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -162,8 +163,8 @@ top:100px;
   grid-area: postghub2;
   border: solid 2px var(--bg-cards);
   background-color: var(--bg-cards);
-  width: 35vw;
-  height: 21vh;
+  width: 34vw;
+  height: 25vh;
   margin-right: 30px;
   padding-left: 20px;
   padding-top: 10px;
@@ -175,12 +176,16 @@ top:100px;
   grid-area: postrecente;
   border: solid 2px var(--bg-cards);
   background-color: var(--bg-cards);
-  width: 71.5vw;
-  height: 10vh;
+  width: 71vw;
+  height: 25vh;
   padding-left: 20px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 10px;
+}
+.PostRecente p{
+  font-size: 20px;
+
 }
 .gifjava{
   margin-left: 250px;
@@ -189,7 +194,7 @@ top:100px;
   grid-area: post;
   border: solid 2px var(--bg-cards);
   background-color: var(--bg-cards);
-  width: 71.5vw;
+  width: 71vw;
   height: 29vh;
   padding-left: 20px;
   margin-left: 10px;
@@ -221,6 +226,9 @@ top:100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.tecnologia p{
+  font-size: 20px;
 }
 ul{
   list-style-type:none;
@@ -257,6 +265,10 @@ align-items: center;
   bottom: 10px;
   border-radius: 10px;
 }
+.Experiencias p {
+  font-size: 20px;
+}
+
 .Educação {
   grid-area: educação;
   border: solid 2px var(--bg-cards);
